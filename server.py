@@ -19,21 +19,23 @@ temp = 0
 #function for help command
 def usage(client):
     msg= '''
-Command List:
-
-\CONNECT connect client to another listening client 
-
-\GET_CLIENT_LIST – to request list of connected clients
-
-\GET_CLIENT_IN_LISTEN to receive listening socket of the client to connect to
-
-\DISPLAY_SHARED_FILES  show the shared files
-
-\DISPLAY_SHARED_FILES_BY_USER <username> show the files that the user wants to share with the other clients
-
-\SEARSH_IN_SHARED_FILES <keyword> - to search for specific shared file
-
-\DISCONNECT_CLIENT –  to indicate that you are no longer connected to the chat service
+----------------------------------------------------------------------------------------------------------------
+Command List:                           (for P2P communication MASTER2: IRS)                                    |
+----------------------------------------------------------------------------------------------------------------
+\CONNECT connect client to another listening client                                                             |
+----------------------------------------------------------------------------------------------------------------
+\GET_CLIENT_LIST – to request list of connected clients                                                         |
+----------------------------------------------------------------------------------------------------------------
+\GET_CLIENT_IN_LISTEN to receive listening socket of the client to connect to                                   |
+----------------------------------------------------------------------------------------------------------------
+\DISPLAY_SHARED_FILES  show the shared files                                                                    |
+----------------------------------------------------------------------------------------------------------------
+\DISPLAY_SHARED_FILES_BY_USER <username> show the files that the user wants to share with the other clients     |
+----------------------------------------------------------------------------------------------------------------
+\SEARSH_IN_SHARED_FILES <keyword> - to search for specific shared file                                          |
+----------------------------------------------------------------------------------------------------------------
+\DISCONNECT_CLIENT –  to indicate that you are no longer connected to the chat service                          |
+----------------------------------------------------------------------------------------------------------------
 
 '''
     client.send(msg)
